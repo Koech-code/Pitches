@@ -70,7 +70,7 @@ def upvote(id):
     new_upvote.save()
 
     return redirect(url_for('main.posts'))
-
+     
 @main.route('/dislike/<int:id>', methods=['POST', 'GET'])
 def downvote(id):
     post=Post.query.get(id)
@@ -79,5 +79,5 @@ def downvote(id):
 
     return redirect(url_for(main.posts))
 
-
+    
 
