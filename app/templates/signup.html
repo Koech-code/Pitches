@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+{% endblock %}
+
+<h3 class="text-center">Sign up</h3>
+<div class="aler alert-danger" role="alert">
+  {{fieldsBlankError}}
+  {{matchError}}
+  {{usernameError}}
+  {{mailError}}
+</div>
+<form action="/signup" method="POST">
+    <label for="username">Username</label>
+    <input type="text" name="username" class="form-control" placeholder="Your preferred username">
+    <label for="email">Email</label>
+    <input type="email" name="email" placeholder="Your email" class="form-control">
+    <label for="password">Password</label>
+    <input type="password" name="password" class="form-control" placeholder="Password of your choice">
+    <label for="confirm password">Confirm Password</label>
+    <input type="password" name="confirm password" class="form-control" placeholder="Confirm the password you chose">
+    <button type="submit" class="d-block mx-auto">sign up</button>
+</form>
+<p>Already have an account?<a href="/login">Login</a></p>
+{% endblock %}
+
+
