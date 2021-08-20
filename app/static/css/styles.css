@@ -196,3 +196,24 @@ h1 {
     margin-top: 5%;
 
 }
+
+#comment {
+    background-color: salmon;
+    font-size: 20px;
+}
+
+#upvote {
+    background-color: limegreen;
+    font-size: 20px;
+}
+
+.btn2 {
+    font-size: 30px;
+    background-color: springgreen;
+}
+
+#downvote {
+    background-color: rgb(243, 170, 12);
+    font-size: 20px;
+    margin-top: 1%;
+}
