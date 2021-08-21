@@ -34,7 +34,7 @@ As a user I would like to;
 - view the different pitch categories.
 
 
-## Behavior Driven Development (BDD):
+## SPECS:
 These are the actions the user will do, inputs required and their outputs on the page. 
 
   | Action    | Input                                      | Output                        |
